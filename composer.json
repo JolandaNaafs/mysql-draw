@@ -16,10 +16,16 @@
       "email": "dev@tugal.be"
     }
   ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/JolandaNaafs/db-draw"
+    }
+  ],
   "require": {
     "php": "^7.4 || ^8.0",
-    "doctrine/dbal": "^2.5",
-    "jawira/db-draw": "^1.2",
+    "doctrine/dbal": "^3.3.4",
+    "jawira/db-draw": "dev-doctrineDBal_3+ as 1.2.3",
     "jawira/mini-getopt": "^1.2",
     "jawira/plantuml-client": "^1.0"
   },
@@ -34,7 +40,10 @@
   "config": {
     "platform-check": true,
     "preferred-install": "dist",
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true
+    }
   },
   "autoload": {
     "psr-4": {
